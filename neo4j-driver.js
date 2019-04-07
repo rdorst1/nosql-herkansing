@@ -1,8 +1,8 @@
 const neo4j = require('neo4j-driver').v1;
 
 // if (process.env.NODE_ENV === 'production') {
-//     driver = neo4j.driver('bolt://hobby-igickikncggcgbkeepnhffbl.dbs.graphenedb.com:24786',
-//     neo4j.auth.basic('admin', 'b.ZHHopQJodcm2.075zXwBCfsVgXwMq'));
+//     driver = neo4j.driver('bolt://hobby-fiaanogldadkgbkegdcepacl.dbs.graphenedb.com:24787',
+//     neo4j.auth.basic('admin', 'b.g6qmbuyClW8f.In6F5mhjiVbm7hcU'));
 //     console.log('Connected to graphendb cloud db')
 // }
 // else if ( process.env.NODE_ENV === 'testCloud' ) {
@@ -18,8 +18,5 @@ const neo4j = require('neo4j-driver').v1;
 
 var driver = neo4j.driver("bolt://hobby-fiaanogldadkgbkegdcepacl.dbs.graphenedb.com:24787", neo4j.auth.basic("admin", "b.g6qmbuyClW8f.In6F5mhjiVbm7hcU"));
 console.log("Connected to Graphenedb")
-
-
-
 
 module.exports = driver;
