@@ -27,29 +27,6 @@ else if ( process.env.NODE_ENV === 'testCloud' ) {
     }); 
 }
 
-
-// if(process.env.NODE_ENV == 'production'){
-// // const MongoClient = require('mongodb').MongoClient;
-// // const uri = "mongodb+srv://admin:1234@cluster0-hg1xn.mongodb.net/test?retryWrites=true";
-// // const client = new MongoClient(uri, { useNewUrlParser: true });
-// // client.connect(err => {
-// //   const collection = client.db("test").collection("devices");
-// //   // perform actions on the collection object
-// //   console.log("Connected to mongoDb on Atlas")
-// //   client.close();
-// // });
-//   MongoClient.connect('mongodb+srv://admin:1234@cluster0-hg1xn.mongodb.net/test?retryWrites=true',{useNewUrlParser: true} ,function(err, db){
-//     if(err) throw err;
-//   });
-// }
-// else if(process.env.NODE_ENV !== 'test'){
-//   MongoClient.connect('mongodb://localhost/db_local_reddit', {useNewUrlParser: true},function (err, db){
-//     console.log("test databse")
-//   if(err) throw err;
-//   });
-// }
-
-
 mongoose.set('useCreateIndex', true);
 mongoose.set('useFindAndModify', false);
 app.use(bodyParser.json());
