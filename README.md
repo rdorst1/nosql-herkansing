@@ -1,1 +1,1 @@
-# nosql-herkansing
+# NOSQL-reddit-clone

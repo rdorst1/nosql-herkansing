@@ -1,0 +1,30 @@
+{
+  "name": "nosql-reddit-clone",
+  "version": "1.0.0",
+  "description": "nosql opdracht",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon --exec \"mocha -R min --exit\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinvanLoon/NOSQL-reddit-clone.git"
+  },
+  "author": "kevin en rowanus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinvanLoon/NOSQL-reddit-clone/issues"
+  },
+  "homepage": "https://github.com/KevinvanLoon/NOSQL-reddit-clone#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.16.4",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.3.13",
+    "mongoose-autopopulate": "^0.9.0",
+    "mongoose-unique-validator": "^2.0.2",
+    "neo4j-driver": "^1.5.0",
+    "nodemon": "^1.18.6",
+    "supertest": "^3.3.0"
+  }
+}
